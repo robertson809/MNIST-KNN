@@ -4,16 +4,16 @@
 
 ---
 
-## October 2019
 
-## 1 Introduction
 
-## 1.1 Data
+## Introduction
+
+### Data
 
 We use the MNIST (Modified National Institute of Standards and Technology) database of handwritten digits downloaded through Scikit-Learn from
 OpenML^1. The dataset contains 70,000 28×28 pixel images of centered digits.
 
-## 1.2 Model
+### Model
 
 To classified unlabeled samples, we implemented the K-nearest neighbors algorithm. To classify a given example based off a feature set, this model examines
 the distance between the feature vector and every other example in the train set,
@@ -44,7 +44,7 @@ However, for a single example, we can predict it inO(nm) time, and we believe
 advance techniques allow the professional implementation of this algorithm by
 SciKit-Learn to improve the time complexity.
 
-## 2 Results
+## Results
 
 We use the F<sub>1</sub> score to measure our model’s success. The F<sub>1</sub> combines precision
 and recall via the harmonic mean to give a reliable overall measure of our model’s
@@ -67,7 +67,7 @@ is clearly outperformed by the professional implementation, but our rates are
 certainly higher than those that could come from guessing alone.
 Based on the above results and tuning, we recommend using the SciKit-Learn implementation of KNN, withk= 3.
 
-## 3 Conclusion
+## Conclusion
 
 Our results show that we can confidently classify handwritten digits in our
 test set with near perfect accuracy. Our results rival but do not surpass those
