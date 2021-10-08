@@ -51,14 +51,23 @@ and recall via the harmonic mean to give a reliable overall measure of our model
 performance.
 
 
-https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/sklearn.png
+<p align="center">
+    
+  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/sklearn.png" alt="drawing" width="400"/>
+</p>
+
+
 
 We compare these results to those that we naively implemented
 
 F1 score for Models for differentkvalues, using our KNN implementation
 
 
-[image]
+<p align="center">
+    
+  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/KNN.png" alt="drawing" width="400"/>
+</p>
+
 
 Because we would clearly use the professional model, we only demonstrate the
 functionality of our model. As such, we only used 500 examples in our training
