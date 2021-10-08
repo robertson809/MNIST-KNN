@@ -53,7 +53,7 @@ performance.
 
 <p align="center">
     
-  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/sklearn.png" alt="drawing" width="400"/>
+  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/sklearn.png" alt="drawing" width="600"/>
 </p>
 
 
@@ -65,7 +65,7 @@ F1 score for Models for differentkvalues, using our KNN implementation
 
 <p align="center">
     
-  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/KNN.png" alt="drawing" width="400"/>
+  <img src="https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/KNN.png" alt="drawing" width="600"/>
 </p>
 
 
