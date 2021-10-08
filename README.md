@@ -31,16 +31,10 @@ in our case in binary, because a number is only ever appropriately classified as
 one number), and examine the magnitude of that vector when projected along
 each of the classification axes.
 The K-nearest neighbors model uses “Lazy learning,” or instance-based
-learning, because it requires no training period prior to prediction. Put another way, no computation can be front loaded before the classifcation attempt,
-
-(^1) Source:https://www.openml.org/d/
-
-
-KNN runs inO(nmo) time, wherem, nandoare the number of training examples, the number of unclassified examples we attempt to predict, and the
-size of the data, respectively. For our case, we have a training set of size 6650,
+learning, because it requires no training period prior to prediction. Put another way, when no computation can be front loaded before the classifcation attempt, KNN runs in O(<i>nmo</i>) time, where <i>m</i>, <i>n</i> and <i>o</i> are the number of training examples, the number of unclassified examples we attempt to predict, and the size of the data, respectively. For our case, we have a training set of size 6650,
 a test set of size 350, and data of size 28^2 = 784. We thus have a running
 time on the order of (6650)(350)(784)≈ 108 for our own naive implementation.
-However, for a single example, we can predict it inO(nm) time, and we believe
+However, for a single example, we can predict it in O(<i>nm</i>) time, and we believe
 advance techniques allow the professional implementation of this algorithm by
 SciKit-Learn to improve the time complexity.
 
