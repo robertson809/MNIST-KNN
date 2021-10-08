@@ -11,7 +11,7 @@
 ### Data
 
 We use the MNIST (Modified National Institute of Standards and Technology) database of handwritten digits downloaded through Scikit-Learn from
-[OpenML](https://www.openml.org/d/). The dataset contains 70,000 28×28 pixel images of centered digits.
+[OpenML](https://www.openml.org/d/554). The dataset contains 70,000 28×28 pixel images of centered digits.
 
 ### Model
 
