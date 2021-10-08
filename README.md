@@ -10,14 +10,12 @@
 
 ## 1.1 Data
 
-We use the MNIST (Modified National Institute of Standards and Technol-
-ogy) database of handwritten digits downloaded through Scikit-Learn from
+We use the MNIST (Modified National Institute of Standards and Technology) database of handwritten digits downloaded through Scikit-Learn from
 OpenML^1. The dataset contains 70,000 28×28 pixel images of centered digits.
 
 ## 1.2 Model
 
-To classified unlabeled samples, we implemented theK-nearest neighborsalgo-
-rithm. To classify a given example based off a feature set, this model examines
+To classified unlabeled samples, we implemented the K-nearest neighbors algorithm. To classify a given example based off a feature set, this model examines
 the distance between the feature vector and every other example in the train set,
 and collects thosek“neighbors” who have the least distance. Because our 784
 pixel-features were numbers, we treated our images as vectors, and use the Euclidean distance as our metric between our training examples and the example
@@ -38,8 +36,7 @@ learning, because it requires no training period prior to prediction. Put anothe
 (^1) Source:https://www.openml.org/d/
 
 
-KNN runs inO(nmo) time, wherem, nandoare the number of training ex-
-amples, the number of unclassified examples we attempt to predict, and the
+KNN runs inO(nmo) time, wherem, nandoare the number of training examples, the number of unclassified examples we attempt to predict, and the
 size of the data, respectively. For our case, we have a training set of size 6650,
 a test set of size 350, and data of size 28^2 = 784. We thus have a running
 time on the order of (6650)(350)(784)≈ 108 for our own naive implementation.
@@ -49,12 +46,12 @@ SciKit-Learn to improve the time complexity.
 
 ## 2 Results
 
-We use theF 1 score to measure our model’s success. TheF 1 combines precision
+We use the F<sub>1</sub> score to measure our model’s success. The F<sub>1</sub> combines precision
 and recall via the harmonic mean to give a reliable overall measure of our model’s
 performance.
 
 
-[image]
+https://raw.githubusercontent.com/robertson809/MNIST-KNN/main/fig/sklearn.png
 
 We compare these results to those that we naively implemented
 
@@ -68,8 +65,7 @@ functionality of our model. As such, we only used 500 examples in our training
 set to predict 500 examples in our validate set. Our implementation of KNN
 is clearly outperformed by the professional implementation, but our rates are
 certainly higher than those that could come from guessing alone.
-Based on the above results and tuning, we recommend using the SciKit-
-Learn implementation of KNN, withk= 3.
+Based on the above results and tuning, we recommend using the SciKit-Learn implementation of KNN, withk= 3.
 
 ## 3 Conclusion
 
